@@ -97,6 +97,7 @@ img {
   width: 400px;
   margin: 10px;
   text-align: center;
-  line-height: 75px;
+  line-height: 45px;
   font-size: 30px;
+  height: auto;
 }
