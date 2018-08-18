@@ -109,7 +109,9 @@ img {
   padding: 30px;
 }
 
-
+form{
+  margin-bottom: 30px;
+}
 
 
 .flex-outer,
@@ -121,6 +123,7 @@ img {
 .flex-outer {
   max-width: 800px;
   margin: 0 auto;
+  padding: 20px;
 }
 
 .flex-outer li,
@@ -172,11 +175,17 @@ img {
   margin-left: auto;
   padding: 8px 16px;
   border: none;
-  background: #333;
+  background: #566573;
   color: #f2f2f2;
   text-transform: uppercase;
   letter-spacing: .09em;
   border-radius: 2px;
+}
+
+.flex-outer li button:hover{
+  background-color: #333;
+  color: white;
+  cursor: pointer;
 }
 
 .flex-inner li {
