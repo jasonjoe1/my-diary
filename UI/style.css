@@ -8,12 +8,15 @@ html {
     -moz-box-sizing: inherit;
     box-sizing: inherit;
     }
-  body {margin:0;}
+  body {
+    margin:0;
+    background-color: #f1f1f1;
+  }
   
   
 .nav {
   overflow: hidden;
-  background-color: dodgerblue;
+  background-color: #566573;
   padding: 10px 10px;
   position: fixed;
   top: 0;
@@ -22,7 +25,7 @@ html {
 
 .nav a {
   float: left;
-  color: black;
+  color: white;
   text-align: center;
   padding: 12px;
   text-decoration: none;
@@ -56,21 +59,22 @@ html {
   }
 }
 
-section {
+.flex-container {
    display: flex;
    flex-direction: row;
    justify-content: center;
    flex-wrap: wrap;
 }
 .media { 
-   padding-top: 70px;
+   padding-top: 60px;
    min-width: 0;
    margin: 5px;
 }
 img {
    width: 100%;
    max-width: 100%; 
-   height: auto; 
+   height: auto;
+   border-radius: 5px;
  }
 
  @media screen and (max-width: 400px) {
@@ -81,23 +85,27 @@ img {
  }
 }
 
-/* @media screen and (min-width: 400px){
-  section {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    display: flex;
-    flex-direction: row;
-    width: 100px;
-  }
-} */
-
 .bottom {
-  background-color: #64be0f;
+  background-color: #AEB6BF;
   width: 400px;
   margin: 10px;
   text-align: center;
   line-height: 45px;
   font-size: 30px;
   height: auto;
+  border-radius: 5px;
+}
+
+.foot {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #566573;
+  color: white;
+  text-align: center;
+}
+
+.empty{
+  padding: 30px;
 }
