@@ -191,3 +191,10 @@ form{
 .flex-inner li {
   width: 100px;
 }
+
+@media only screen and (max-width: 600px)  {
+  form{
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+}
