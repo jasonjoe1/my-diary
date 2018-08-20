@@ -171,7 +171,7 @@ form{
   border: none;
 }
 
-.flex-outer li button {
+.flex-outer li button, .btn {
   margin-left: auto;
   padding: 8px 16px;
   border: none;
@@ -182,6 +182,9 @@ form{
   border-radius: 2px;
 }
 
+form > div > .btn{
+  text-transform: capitalize;
+}
 .flex-outer li button:hover{
   background-color: #333;
   color: white;
@@ -190,6 +193,12 @@ form{
 
 .flex-inner li {
   width: 100px;
+}
+
+.btn:hover{
+  background-color: #333;
+  color: white;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 600px)  {
