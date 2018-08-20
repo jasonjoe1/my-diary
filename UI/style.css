@@ -182,7 +182,7 @@ form{
   border-radius: 2px;
 }
 
-form > div > .btn{
+form > div > .btn,div>.btn{
   text-transform: capitalize;
 }
 .flex-outer li button:hover{
