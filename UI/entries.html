@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>My Diary</title>
 </head>
 <header id='header'>
@@ -20,30 +21,30 @@
     <div class="container">
         <form action="/" method="POST">
             <div class="textarea">
-                    <textarea name="addEntry" id="addEntry" cols="30" rows="8" autofocus placeholder="Add a new entry" required wrap="hard"></textarea>
+                    <textarea name="addEntry" class="addEntry" cols="30" rows="8" autofocus placeholder="Add a new entry" required wrap="hard"></textarea>
                     <button type="submit" class="btn"><i class="fas fa-plus-square"></i> Add</button>
             </div>
         </form>
 
-            <div class="textarea">
-                    <textarea name="ediEntry" id="editEntry" cols="30" rows="8" readonly>My first journal entry
+            <div>
+                    <textarea name="editEntry" class="editEntry" cols="30" rows="8" readonly>My first journal entry
                     </textarea>
-                    <button type="submit" class="btn"><i class="fas fa-edit"></i> Edit</button>
-                    <button type="submit" class="btn"><i class="fas fa-save"></i> Save</button>
+                    <button type="submit" class="btn edit"><i class="fas fa-edit"></i> Edit</button>
+                    <button type="submit" class="btn save"><i class="fas fa-save"></i> Save</button>
             </div>
        
-            <div class="textarea">
-                    <textarea name="ediEntry" id="editEntry" cols="30" rows="8" readonly>My second journal entry
+            <div>
+                    <textarea name="editEntry" class="editEntry" cols="30" rows="8" readonly>My second journal entry
                     </textarea>
-                    <button type="submit" class="btn"><i class="fas fa-edit"></i> Edit</button>
-                    <button type="submit" class="btn"><i class="fas fa-save"></i> Save</button>
+                    <button type="submit" class="btn edit"><i class="fas fa-edit"></i> Edit</button>
+                    <button type="submit" class="btn save"><i class="fas fa-save"></i> Save</button>
             </div>
 
-            <div class="textarea">
-                    <textarea name="ediEntry" id="editEntry" cols="30" rows="8" readonly>My third journal entry
+            <div>
+                    <textarea name="editEntry" id="editEntry" cols="30" rows="8" id='demo' readonly>My third journal entry
                     </textarea>
-                    <button type="submit" class="btn"><i class="fas fa-edit"></i> Edit</button>
-                    <button type="submit" class="btn"><i class="fas fa-save"></i> Save</button>
+                    <button type="submit" class="btn edit"><i class="fas fa-edit"></i> Edit</button>
+                    <button type="submit" class="btn save"><i class="fas fa-save"></i> Save</button>
             </div>
 
       <section>
@@ -63,5 +64,6 @@
           </footer>
       </div>
     </div>
+    <script type="text/javascript" src="js/diary.js"></script>
 </body>
 </html>
