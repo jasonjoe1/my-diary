@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>My Diary</title>
+</head>
+<header id='header'>
+  <nav class="nav" id='nav-bar'>
+    <div class="nav-right">
+      <a class="nav-link" href="profile.html">My Profile</a>
+      <a class="nav-link" href="entries.html">Entries</a>
+      <a class="nav-link" href="index.html">Log Out</a>
+    </div>
+  </nav>
+</header>
+<body>
+    <div class="container">
+        <form action="/" method="POST">
+            <div class="flex-outer">
+                        <textarea name="addEntry" class="addEntry" cols="30" rows="8" autofocus placeholder="Add a new entry" required wrap="hard"></textarea>
+                        <button type="submit" class="btn"><i class="fas fa-plus-square"></i> Add</button>
+
+            </div>
+        </form>
+
+        <div class="flex-outer">
+                <textarea name="editEntry" class="editEntry" cols="30" rows="8" readonly>Today has been great. It was my birthday today and I got so much presents from my friends and family.
+                    </textarea>
+                    <button type="submit" class="btn edit"><i class="fas fa-edit"></i> Edit</button>
+                    <button type="submit" class="btn save"><i class="fas fa-save"></i> Save</button>
+        </div>
+            
+        <div class="flex-outer">
+                <textarea name="editEntry" class="editEntry" cols="30" rows="8" readonly>Dear diary, it's been and awesome journey to the path of being a self-taught developer.
+                    </textarea>
+                    <button type="submit" class="btn edit"><i class="fas fa-edit"></i> Edit</button>
+                    <button type="submit" class="btn save"><i class="fas fa-save"></i> Save</button>
+        </div>
+
+        <div class="flex-outer">
+                <textarea name="editEntry" class="editEntry" cols="30" rows="8" readonly>Today was a little better. I texted Sarah last night asking if she wanted to have lunch with me today, just the two of us, and she said sure.
+                    </textarea>
+                    <button type="submit" class="btn edit"><i class="fas fa-edit"></i> Edit</button>
+                    <button type="submit" class="btn save"><i class="fas fa-save"></i> Save</button>
+        </div>
+ 
+      <div class="empty">
+
+      </div>
+
+      <div class="foot">
+          <footer>
+              <p> &copy; Jason Ogaga, 2018</p>
+          </footer>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/diary.js"></script>
+</body>
+</html>
