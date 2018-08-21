@@ -13,47 +13,41 @@
   <nav class="nav" id='nav-bar'>
     <div class="nav-right">
       <a class="nav-link" href="entries.html">Entries</a>
-      <a class="nav-link" href="#">Log Out</a>
+      <a class="nav-link" href="index.html">Log Out</a>
     </div>
   </nav>
 </header>
 <body>
     <div class="container">
         <form action="/" method="POST">
-            <div class="textarea">
-                    <textarea name="addEntry" class="addEntry" cols="30" rows="8" autofocus placeholder="Add a new entry" required wrap="hard"></textarea>
-                    <button type="submit" class="btn"><i class="fas fa-plus-square"></i> Add</button>
+            <div class="flex-outer">
+                        <textarea name="addEntry" class="addEntry" cols="30" rows="8" autofocus placeholder="Add a new entry" required wrap="hard"></textarea>
+                        <button type="submit" class="btn"><i class="fas fa-plus-square"></i> Add</button>
+
             </div>
         </form>
 
-            <div>
-                    <textarea name="editEntry" class="editEntry" cols="30" rows="8" readonly>My first journal entry
+        <div class="flex-outer">
+                <textarea name="editEntry" class="editEntry" cols="30" rows="8" readonly>Today has been great. It was my birthday today and I got so much presents from my friends and family.
                     </textarea>
                     <button type="submit" class="btn edit"><i class="fas fa-edit"></i> Edit</button>
                     <button type="submit" class="btn save"><i class="fas fa-save"></i> Save</button>
-            </div>
-       
-            <div>
-                    <textarea name="editEntry" class="editEntry" cols="30" rows="8" readonly>My second journal entry
+        </div>
+            
+        <div class="flex-outer">
+                <textarea name="editEntry" class="editEntry" cols="30" rows="8" readonly>Dear diary, it's been and awesome journey to the path of being a self-taught developer.
                     </textarea>
                     <button type="submit" class="btn edit"><i class="fas fa-edit"></i> Edit</button>
                     <button type="submit" class="btn save"><i class="fas fa-save"></i> Save</button>
-            </div>
+        </div>
 
-            <div>
-                    <textarea name="editEntry" id="editEntry" cols="30" rows="8" id='demo' readonly>My third journal entry
+        <div class="flex-outer">
+                <textarea name="editEntry" class="editEntry" cols="30" rows="8" readonly>Today was a little better. I texted Sarah last night asking if she wanted to have lunch with me today, just the two of us, and she said sure.
                     </textarea>
                     <button type="submit" class="btn edit"><i class="fas fa-edit"></i> Edit</button>
                     <button type="submit" class="btn save"><i class="fas fa-save"></i> Save</button>
-            </div>
-
-      <section>
-
-  
-      </section>
-
+        </div>
  
-
       <div class="empty">
 
       </div>
