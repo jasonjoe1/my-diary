@@ -166,7 +166,7 @@ form{
 }
 
 .flex-outer li input:not([type='checkbox']),
-.flex-outer li textarea {
+.flex-outer li textarea,.user {
   padding: 15px;
   border: none;
 }
@@ -200,6 +200,9 @@ form > div > .btn,div>.btn{
   color: white;
   cursor: pointer;
 }
+.addEntry{
+  margin-top: 10px;
+}
 
 @media only screen and (max-width: 600px)  {
   form{
@@ -208,6 +211,26 @@ form > div > .btn,div>.btn{
   }
 }
 
+@media only screen and (max-width: 600px){
+  .addEntry{
+    margin-top:80px;
+  }
+}
+
 .profile-pic{
   vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.welcome{
+  padding: 10px;
+}
+
+@media only screen and (max-width: 600px){
+  .welcome{
+    padding: 10px;
+    margin-top: 90px;
+  }
 }
